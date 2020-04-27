@@ -1,0 +1,28 @@
+@model Product
+
+<h3 class="text-center">New Product</h3>
+<hr />
+
+<form asp-action="CreateProduct" asp-controller="Home" method="post">
+    <div class="form-group">
+        <label asp-for="ProductName"></label>
+        <span class="text-danger font-weight-bold" asp-validation-for="ProductName"></span>
+        <input class="form-control" asp-for="ProductName">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <span class="text-danger font-weight-bold" asp-validation-for="Description"></span>
+        <textarea asp-for="Description" class="form-control" id="Description" rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <span class="text-danger font-weight-bold" asp-validation-for="Price"></span>
+        <input class="form-control" asp-for="Price">
+    </div>
+    </div>
+
+    <button class="btn btn-info" type="submit">Create</button>
+
+</form>

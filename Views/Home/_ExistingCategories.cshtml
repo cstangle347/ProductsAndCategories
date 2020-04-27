@@ -1,0 +1,13 @@
+@model Category
+
+<h3 class="text-center">Existing Categories</h3>
+<hr />
+
+<div>
+    @foreach (var c in ViewBag.Category)
+        {
+            <li><a href="/categories/@c.CategoryId">@c.CategoryName</a></li>
+        }
+</div>
+
+<hr />

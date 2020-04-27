@@ -1,0 +1,13 @@
+@model Product
+
+<h3 class="text-center">Existing Products</h3>
+<hr />
+
+<div>
+    @foreach (var p in ViewBag.Product)
+        {
+            <li><a href="/products/@p.ProductId">@p.ProductName</a></li>
+        }
+</div>
+
+<hr />

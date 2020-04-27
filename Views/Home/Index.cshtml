@@ -1,0 +1,14 @@
+﻿@model Product
+
+<div class="container">
+    <h1 class="text-center display-4">Products || <a asp-action="Categories">Categories</a></h1>
+    <hr />
+
+<div class="row">
+    <div class="col-4">
+        <partial name="_NewProduct"></partial>
+    </div>
+    <div class="col-4">
+        <partial name="_ExistingProducts"></partial>
+    </div>
+</div>
